@@ -1,0 +1,12 @@
+# Achados reconhecidos e aceitos explicitamente.
+# As chaves abaixo sao exemplos publicos e inofensivos (chave de exemplo
+# oficial da documentacao da AWS e chave de exemplo do Stripe), commitadas
+# propositalmente para fins didaticos e ja removidas do codigo atual
+# (ver AppConfig.java). Como nunca foram credenciais reais, a resposta
+# adequada e reconhecer o achado historico via fingerprint, em vez de
+# reescrever o historico do repositorio (git filter-repo/BFG), o que so se
+# justifica quando o segredo vazado e real.
+#
+# Formato do fingerprint: commit:arquivo:regra:linha
+641288ce97e4c05bec7365093a991fc054f5311a:src/main/java/com/unifebe/devsecops/config/AppConfig.java:aws-access-token:14
+641288ce97e4c05bec7365093a991fc054f5311a:src/main/java/com/unifebe/devsecops/config/AppConfig.java:stripe-access-token:18
