@@ -12,7 +12,10 @@ Este arquivo e gerado automaticamente pela pipeline.
 
 | Item | Valor |
 |---|---|
-| Status | ⚪ Pulado (algum gate de seguranca falhou) |
-| Commit | `e732d1e3ae96ff7a7366ef356a1d190833576e17` |
-| Execucao | [35749581568](https://github.com/JoaoGabrielCosta/banco-facil-api/actions/runs/35749581568) |
-| Data | 22/09/2026 15:48 UTC |
+| Status | 🟢 Sucesso |
+| Imagem | `ghcr.io/joaogabrielcosta/banco-facil-api` |
+| Tags | `latest`, `17d8fcfe7d827038b4c5494ebf3113e01188e708` |
+| Digest | `sha256:ae68314cf07b06431012d27dc8919ee16c15a786a3cf08102245c5fbc73b12cd` |
+| Commit | `17d8fcfe7d827038b4c5494ebf3113e01188e708` |
+| Execucao | [35750129369](https://github.com/JoaoGabrielCosta/banco-facil-api/actions/runs/35750129369) |
+| Data | 22/09/2026 16:03 UTC |
