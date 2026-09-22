@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.5</version>
+        <version>3.5.16</version>
         <relativePath/>
     </parent>
 
@@ -27,25 +27,12 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- FALHA PROPOSITAL (SCA): versao vulneravel a Log4Shell (CVE-2021-44228 / CVE-2021-45046) -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>2.14.1</version>
-        </dependency>
-
-        <!-- FALHA PROPOSITAL: dependencia adicionada mas nunca utilizada no codigo -->
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.10.1</version>
-        </dependency>
-             
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.10.1</version>
-        </dependency>
+        <!--
+            PaymentService usa apenas a API do log4j (LogManager/Logger), que
+            ja chega transitivamente via log4j-to-slf4j (spring-boot-starter-
+            logging). O log4j-core (implementacao vulneravel ao Log4Shell,
+            CVE-2021-44228) nao e necessario e foi removido.
+        -->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
